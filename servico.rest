@@ -1,0 +1,32 @@
+### CRIAR UM AGENDAMENTO
+POST http://localhost:5000/api/agendamentos/criar
+Content-Type: application/json
+
+{
+   "servico":"Massagem",
+    "data":"2020-01-01",
+    "horario":"12:00",
+    "cliente":"62b1cad705b4005bc7c50f82",
+    "status":"pendente"
+}
+
+
+### LISTAR TODOS OS AGENDAMENTOS
+GET http://localhost:5000/api/agendamentos/listar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##servico, data, horario, cliente, status [pendente, confirmado, cancelado, regendado]

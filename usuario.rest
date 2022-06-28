@@ -1,0 +1,33 @@
+###todos os usuarios
+GET http://localhost:5000/api/usuarios
+
+
+###Obter um usuario
+GET http://localhost:5000/api/usuarios/1
+
+
+###Criar um usuario
+POST http://localhost:5000/api/usuarios
+Content-Type: application/json
+
+{
+    "nome": "Cristina",
+    "cpf":"12345678921",
+    "email": "cristina@email.com",
+    "nascimento": "1992-10-29",
+    "senha": "123456",
+    "telefone": "11999999999",
+    "endereco": "Rua dos Bobos num 32"
+}
+
+
+### ATUALIZAR CADASTRO
+PATCH http://l/62b1cad705b4005bc7c50f82
+Content-Type: application/json
+
+{
+    "nome": "Cristina Martins"
+}
+
+
+## nome, email, nascimento, senha, telefone, endereco

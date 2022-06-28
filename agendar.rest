@@ -1,0 +1,41 @@
+# 🪜  🧲 🧰 🪝⛓️ 🔗  🦯 ❌ 🆕 ✨ 💥 🛠️⚙️🧰
+
+
+
+## CRIAR AGENDA                🆕      
+POST http://localhost:5000/api/agendas/agendar
+Content-Type: application/json
+
+{
+    "dia":"2022-06-28",
+    "horarios":[
+        {
+            "hora":"15:00",
+            "ocupdado":true
+        },
+        {
+            "hora":"16:00",
+            "ocupdado":false
+        }
+    ]
+}
+
+
+### Procurar horarios ocupados 🔎
+GET http://localhost:5000/api/agendas
+
+
+
+
+
+### Liberar um horario de uma dia especifico 🛠️
+PATCH http://localhost:5000/api/agendas/ocupar/2022-12-21/9:00
+
+
+### BUSCAR TODOS OS HORARIOS 🛠️
+GET http://localhost:5000/api/agendas
+
+
+
+### Procurar horarios pra um dia especifico 🔎
+GET http://localhost:5000/api/agendas/2022-06-1
